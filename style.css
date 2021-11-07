@@ -10,7 +10,7 @@ body {
 
 .jumbotron {
     padding: 6rem;
-    background-image: url(img/sampul.jpg);
+    background-image: url(img/sampul1.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -115,7 +115,7 @@ section h2 {
     line-height: 1.7;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .timeline ul li {
         width: 100%;
     }
