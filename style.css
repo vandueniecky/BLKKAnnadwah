@@ -1,33 +1,39 @@
-body {
-    margin: 0;
-    padding: 0;
+.navbar-light .navbar-toggler {
+    color: rgba(225, 255, 255, 0.5);
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0);
-    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     padding: 6px 5px;
     border-radius: 15px;
-
 }
 
-.container a:hover {
-    background-color: #087745;
-    color: #fff;
+.navbar-light .navbar-nav a:hover {
+    background-color: rgba(225, 255, 255, 0.5);
+    color: #087745;
+
 }
 
 .jumbotron {
-    padding: 20rem;
-    height: 900px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    text-shadow: 2px 1px #000000;
+    padding: 6rem;
     background-image: url(img/sampul1.jpg);
+    background-attachment: fixed;
+    background-position: 0 -100px;
     background-size: cover;
-    color: white;
-    text-shadow: 1px 2px #333;
     overflow: hidden;
+    height: 600px;
+}
+
+.jumbotron img {
+    width: 100px;
 }
 
 section h2 {
@@ -142,6 +148,7 @@ section h2 {
 
 /* Breakpoint */
 @media (max-width: 768px) {
+
     .timeline ul li {
         width: 100%;
     }
