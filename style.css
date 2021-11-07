@@ -9,11 +9,10 @@ body {
 }
 
 .jumbotron {
-    height: 870px;
-    padding: 10rem;
+    padding: 6rem;
     background-image: url(img/sampul.jpg);
+    background-attachment: fixed;
     background-size: cover;
-    overflow: hidden;
     color: white;
     text-shadow: 1px 2px #333;
 }
@@ -116,5 +115,8 @@ section h2 {
     line-height: 1.7;
 }
 
+@media screen {
+    
+}
 
 /* Akhir Timeline efek */
