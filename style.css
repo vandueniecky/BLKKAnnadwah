@@ -115,7 +115,26 @@ section h2 {
     line-height: 1.7;
 }
 
-@media screen {
+@media (max-width: 576px) {
+    .timeline ul li {
+        width: 100%;
+    }
+
+    .timeline:before {
+        left: 0;
+    }
+
+    .timeline ul li:nth-child(odd){
+        text-align: left;
+    }
+
+    .timeline ul li:nth-child(even){
+        float: left;
+    }
+
+    .timeline ul li:nth-child(odd):before {
+        left: -9px;
+    }
     
 }
 
