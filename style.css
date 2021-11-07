@@ -1,35 +1,50 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ddd;
 }
 
 .navbar {
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 900;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 6px 5px;
+    border-radius: 15px;
+
+}
+
+.container a:hover {
     background-color: #087745;
+    color: #fff;
 }
 
 .jumbotron {
-    padding: 6rem;
+    padding: 20rem;
+    height: 900px;
     background-image: url(img/sampul1.jpg);
-    background-attachment: fixed;
     background-size: cover;
     color: white;
     text-shadow: 1px 2px #333;
+    overflow: hidden;
 }
 
 section h2 {
     font-weight: bold;
 }
 
+/* About */
 .about {
-    padding-top: 2rem;
+    padding-top: 4rem;
     background-color: white;
 }
+/* Akhir About */
 
 /* Facility Timeline Efek */
-
 .facility {
-    padding-top: 2rem ;
+    padding-top: 4rem ;
+    background-color: #ddd;
 }
 
 .timeline {
@@ -75,10 +90,10 @@ section h2 {
 
 .content {
     padding-bottom: 20px;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     padding: 10px 10px;
     border-radius: 5px;
-    background: #fff;
+    background: white;
 }
 
 .timeline ul li:nth-child(odd):before{
@@ -115,6 +130,17 @@ section h2 {
     line-height: 1.7;
 }
 
+/* Akhir Timeline efek */
+
+/* Gallery */
+.gallery {
+    background-color: #fff;
+}
+
+/* Akhir Gallery */
+
+
+/* Breakpoint */
 @media (max-width: 768px) {
     .timeline ul li {
         width: 100%;
@@ -138,4 +164,5 @@ section h2 {
     
 }
 
-/* Akhir Timeline efek */
+/* Akhir Breackpoint */
+
