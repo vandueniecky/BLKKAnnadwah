@@ -17,13 +17,12 @@ span.navbar-toggler-icon {
 
 .navbar a {
     text-decoration: none;
-    padding: 6px 5px;
-    border-radius: 15px;
+    border-radius: 20px;
     color: #fff;
 }
 
 .navbar a:hover {
-    background-color: rgba(225, 255, 255, 0.5);
+    background: rgba(225, 255, 255, 0.5);
     color: #087745;
 }
 
@@ -34,7 +33,7 @@ span.navbar-toggler-icon {
     padding: 5rem;
     background-image: url(img/sampul1.jpg);
     background-attachment: fixed;
-    background-position: 0 -100px;
+    background-position: 0 -60px;
     background-size: cover;
     overflow: hidden;
 }
@@ -104,7 +103,6 @@ section h2 {
     box-sizing: border-box;
 }
 
-
 .timeline ul li:nth-child(odd){
     float: left;
     text-align: right;
@@ -115,6 +113,14 @@ section h2 {
     float: right;
     text-align: left;
     clear: both;
+}
+
+.timeline ul li:nth-child(odd):hover:before {
+    background-color: salmon;
+}
+
+.timeline ul li:nth-child(even):hover:before {
+    background-color: salmon;
 }
 
 .content {
@@ -136,6 +142,7 @@ section h2 {
     border-radius: 50%;
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
 }
+
 .timeline ul li:nth-child(even):before{
     content: '';
     position: absolute;
@@ -167,6 +174,10 @@ section h2 {
 /* Gallery */
 .gallery {
     background-color: #ddd;
+}
+
+.carousel img {
+    overflow: hidden;
 }
 
 /* Akhir Gallery */

@@ -2,7 +2,7 @@
 $ (window).scroll(function(){
 
     // navbar transparant to color on scrollTop
-    $('.navbar-expand-md').toggleClass('scrolled', $(this).scrollTop() > 350);
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 350);
 
     // jumbotron
     var wScroll = $(this).scrollTop();
