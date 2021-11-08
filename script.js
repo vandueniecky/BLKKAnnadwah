@@ -1,8 +1,12 @@
-// paralax jumbotron
+// wScroll
 $ (window).scroll(function(){
 
-    var wScroll = $(this).scrollTop();
+    // navbar transparant to color on scrollTop
+    $('.navbar-expand-md').toggleClass('scrolled', $(this).scrollTop() > 350);
 
+    // jumbotron
+    var wScroll = $(this).scrollTop();
+    
     $ ('.jumbotron img').css({
         'transform' : 'translate(0px, '+ wScroll/1.8 +'%)'
     
@@ -16,7 +20,30 @@ $ (window).scroll(function(){
 
     });
 
+    // About
+
+    
+    // Facility timeline
+    if( wScroll > $ ('.facility').offset().top -350) {
+        $('.facility .timeline ul li').each(function(i){
+            setTimeout(function() {
+
+                $('.facility .timeline ul li').eq(i).addClass('fade');
+
+            }, 300 * (i+1));
+        });
+
+    }
+
+
 });
+
+// Click Scroll Trigger
+$('.scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+
+});
+
 
 
 

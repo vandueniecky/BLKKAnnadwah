@@ -1,39 +1,50 @@
-.navbar-light .navbar-toggler {
-    color: rgba(225, 255, 255, 0.5);
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* akhir import */
+
+span.navbar-toggler-icon {
+    background-image: url(img/download.svg);
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.2);
+    background: transparent !important;
     font-weight: bold;
+}
+
+.navbar.scrolled {
+    background: #087745 !important;
 }
 
 .navbar a {
     text-decoration: none;
     padding: 6px 5px;
     border-radius: 15px;
+    color: #fff;
 }
 
-.navbar-light .navbar-nav a:hover {
+.navbar a:hover {
     background-color: rgba(225, 255, 255, 0.5);
     color: #087745;
-
 }
 
 .jumbotron {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    text-shadow: 2px 1px #000000;
-    padding: 6rem;
+    text-shadow: 0.5px 1px 1px #ddd;
+    padding: 5rem;
     background-image: url(img/sampul1.jpg);
     background-attachment: fixed;
     background-position: 0 -100px;
     background-size: cover;
     overflow: hidden;
-    height: 600px;
 }
 
 .jumbotron img {
     width: 100px;
+}
+
+.jumbotron p {
+    font-family: 'Space Mono', monospace;
 }
 
 section h2 {
@@ -53,6 +64,17 @@ section h2 {
     background-color: #ddd;
 }
 
+.facility .timeline ul li {
+    opacity: 0;
+    transform: translate(0, -50);
+    transition: 0.8s;
+}
+
+.facility .timeline ul li.fade {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 .timeline {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -66,7 +88,7 @@ section h2 {
     left: 50%;
     width: 2px;
     height: 100%;
-    background: #087745;
+    background: #000;
 }
 
 .timeline ul {
@@ -78,9 +100,10 @@ section h2 {
     list-style: none;
     position: relative;
     width: 50%;
-    padding: 20px 40px;
+    padding: 20px 20px;
     box-sizing: border-box;
 }
+
 
 .timeline ul li:nth-child(odd){
     float: left;
@@ -96,7 +119,7 @@ section h2 {
 
 .content {
     padding-bottom: 20px;
-    border: 2px solid #eee;
+    border: 2px solid rgba(0, 0, 0, 0.3);
     padding: 10px 10px;
     border-radius: 5px;
     background: white;
@@ -105,24 +128,24 @@ section h2 {
 .timeline ul li:nth-child(odd):before{
     content: '';
     position: absolute;
-    top: 24px;
+    top: 0px;
     right: -11px;
     width: 20px;
     height: 20px;
-    background: #087745;
+    background: #000;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
 }
 .timeline ul li:nth-child(even):before{
     content: '';
     position: absolute;
-    top: 24px;
+    top: 0px;
     left: -9px;
     width: 20px;
     height: 20px;
-    background: #087745;
+    background: #000;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .timeline ul li h3 {
@@ -138,9 +161,12 @@ section h2 {
 
 /* Akhir Timeline efek */
 
+/* Program */
+/* Akhir Program */
+
 /* Gallery */
 .gallery {
-    background-color: #fff;
+    background-color: #ddd;
 }
 
 /* Akhir Gallery */
@@ -172,4 +198,15 @@ section h2 {
 }
 
 /* Akhir Breackpoint */
+
+/* Semua animasi CSS */
+@keyframes fade {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* akhir animasi */
 
