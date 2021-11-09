@@ -3,7 +3,15 @@
 /* akhir import */
 
 span.navbar-toggler-icon {
-    background-image: url(img/download.svg);
+    background-image: url(img/icon/list.svg);
+}
+
+span.navbar-toggler-icon.close {
+    background-image: url(img/icon/x-lg.svg);
+}
+
+.navbar button {
+    color: transparent !important;
 }
 
 .navbar {
@@ -22,8 +30,12 @@ span.navbar-toggler-icon {
 }
 
 .navbar a:hover {
-    background: rgba(225, 255, 255, 0.5);
+    background: rgba(220, 220, 220, 0.5);
     color: #087745;
+}
+
+i {
+    
 }
 
 .jumbotron {
@@ -116,11 +128,11 @@ section h2 {
 }
 
 .timeline ul li:nth-child(odd):hover:before {
-    background-color: salmon;
+    background-color: #087745;
 }
 
 .timeline ul li:nth-child(even):hover:before {
-    background-color: salmon;
+    background-color: #087745;
 }
 
 .content {
@@ -169,6 +181,9 @@ section h2 {
 /* Akhir Timeline efek */
 
 /* Program */
+.program {
+    padding-top: 4rem;
+}
 /* Akhir Program */
 
 /* Gallery */
@@ -176,8 +191,8 @@ section h2 {
     background-color: #ddd;
 }
 
-.carousel img {
-    overflow: hidden;
+.carousel-item img{
+    height: 300px;
 }
 
 /* Akhir Gallery */

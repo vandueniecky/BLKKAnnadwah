@@ -41,8 +41,12 @@ $ (window).scroll(function(){
 // Click Scroll Trigger
 $('.scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
-
 });
+
+$('.close-trigger').click(function() {
+    $('span.navbar-toggler-icon').toggleClass('close');
+});
+
 
 
 
