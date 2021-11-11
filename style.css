@@ -1,5 +1,6 @@
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap');
 /* akhir import */
 
 span.navbar-toggler-icon {
@@ -184,17 +185,59 @@ section h2 {
 
 /* Gallery */
 .gallery {
+    padding-top: 4rem;
     background-color: #ddd;
 }
 
 .carousel-item img{
+    box-shadow: #ddd;
     height: 300px;
 }
 
 /* Akhir Gallery */
 
+/* Administrator */
+.administrator {
+    padding-top: 4rem;
+}
 
-/* Breakpoint */
+.administrator h1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-weight: 900;
+    color:#087745;
+}
+/* Akhir Adminitrator */
+
+/* Creation */
+.creation {
+    padding-top: 4rem;
+    background-color: #ddd;
+}
+
+.creation h1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-weight: 900;
+    color:#087745;
+}
+/* Akhir Creation */
+
+/* Contact */
+.contact {
+    padding-top: 4rem;
+}
+/* Akhir Contact */
+
+/* Footer */
+.footer {
+    padding: 10px;
+    background-color: #087745;
+}
+/*  */
+
+
+/* Breakpoint Device */
 @media (max-width: 768px) {
 
     .timeline ul li {
